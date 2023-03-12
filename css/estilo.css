@@ -1,3 +1,7 @@
+nav {
+    background-color: #e3f2fd;
+}
+
 /*cabeçalho*/
 
 
@@ -11,6 +15,12 @@
 }
 
 /*Produtos vendidos*/
+
+#section-vendidos img {
+    overflow: hidden;
+    height: 250px;
+}
+
 #section-vendidos {
     text-align: center;
 }
@@ -18,15 +28,18 @@
     font-weight: bold;
     padding: 20px;
 }
-#section-vendidos img {
-    height: 400px;
-    border-radius: 10px;
-}  
+
+#section-vendidos a {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
 #section-vendidos .card {
-    margin: 5px;
+    /* margin: 5px; */
     border: 1px solid #ccc;
     border-radius: 10px;
-    width: 10px;
+    margin-bottom: 10px;
+    /* width: 10px; */
 }  
 #section-vendidos .preço {
     color: red;

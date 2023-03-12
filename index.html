@@ -5,33 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GAME MANIA</title>
+  <title>Game Mania - O universo gamer chegou até você!</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="css/estilo.css">
 
 
 </head>
 
 <body>
   <header>
-  <!--menu do site-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!--menu do site-->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./img/logo-completa.png" alt="" width="50px" height="50px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo1.png" alt="" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Sacola</a>
+              <a class="nav-link" aria-current="page" href="./categorias.html">Categorias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrinho</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="login.html">Login</a>
@@ -39,19 +44,22 @@
           </ul>
 
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="O que está procurando?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input class="form-control me-2" type="search" placeholder="Produto, Categoria..." aria-label="Search">
+            <button class="btn btn-primary" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
           </form>
         </div>
       </div>
     </nav>
 
   </header>
-<!--capa do site-->
-  <main>
-    <section id="section-banners" class="container-fluid">
+  <!--capa do site-->
+  <main class="container-fluid">
 
-      <div id="carouselExample" class="carousel slide">
+    <section id="section-banners">
+
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./img/capa-nova.jpg" class="d-block w-100" alt="boas vindas">
@@ -63,11 +71,11 @@
             <img src="./img/banner3.PNG" class="d-block w-100" alt="Descubra algo novo">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -76,56 +84,110 @@
     </section>
 
 
-    <section id="section-vendidos" class="container-fluid">
+    <section id="section-vendidos">
 
       <h2> MAIS VENDIDOS</h2>
 
-      <div class="card-group">
-      <div class="card" style="width: 18rem;">
-        <img src="./img/jogo.jpeg" class="card-img-top" alt=" God of War Ragnarok">
-         <div class="card-body">
-            <h5 class="card-title"> God of War Ragnarok</h5>
-            <p class="card-text"> O jogo de aventura de maior sucesso do ano.</p>
-            <p class="preço">299,90</p>
-            <a href="#" class="btn btn-primary">comprar</a>
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/jogo.jpeg" class="" alt=" God of War Ragnarok">
+            <div class="card-body">
+              <h5 class="card-title">God of War Ragnarok</h5>
+              <p class="card-text"> O jogo de aventura de maior sucesso do ano.</p>
+              <p class="preço">R$ 299,90</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
           </div>
-      </div>
-      
-
-     <div class="card" style="width: 18rem;">
-        <img src="./img/computer-gaa0913758_1920.jpg" class="card-img-top" alt=" Notebook">
-        <div class="card-body">
-          <h5 class="card-title"> Notebook</h5>
-          <p class="card-text"> ideal para trabalho e estudos.</p>
-          <p class="preço">2.700,90</p>
-          <a href="#" class="btn btn-primary">comprar</a>
         </div>
-      </div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="./img/smartphone-preto.jpg" class="card-img-top" alt="Smartphone">
-      <div class="card-body">
-        <h5 class="card-title"> Smartphone</h5>
-        <p class="card-text"> ótimo para jogos, 4 câmeras de alta performance.</p>
-        <p class="preço">1.290,99</p>
-        <a href="#" class="btn btn-primary">comprar</a>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/smartphone-preto.jpg" class="card-img-top" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Smartphone</h5>
+              <p class="card-text"> ótimo para jogos, 4 câmeras de alta performance.</p>
+              <p class="preço">R$ 1.290,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
         </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/jogo-god-fall-ps5.jpg" class="card-img-top" alt="jogops5">
+            <div class="card-body">
+              <h5 class="card-title">GodFall</h5>
+              <p class="card-text">Jogo de ação e aventura</p>
+              <p class="preço">R$ 299,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/notebook3.jpeg" class="card-img-top" alt="notebook">
+            <div class="card-body">
+              <h5 class="card-title">Computador</h5>
+              <p class="card-text">Alta performance</p>
+              <p class="preço">R$ 1.390,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/ps4.webp" class="card-img-top" alt="videogame">
+            <div class="card-body">
+              <h5 class="card-title">PlayStation 4</h5>
+              <p class="card-text">Sony PlayStation 4 1TB Standard </p>
+              <p class="preço">R$ 2.099,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/ps5.jpeg" class="card-img-top" alt="videogame">
+            <div class="card-body">
+              <h5 class="card-title">PlayStation 5</h5>
+              <p class="card-text">PlayStation 5 Standard branco </p>
+              <p class="preço">R$ 4.490,90</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/Galaxy_S22_Ultra.jpeg" class="card-img-top" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Galaxy S22 Ultra</h5>
+              <p class="card-text"> ótimo para jogos, câmeras de alta performance.</p>
+              <p class="preço">R$ 1.290,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="./img/xiaomi12.jpeg" class="card-img-top" alt="Smartphone">
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi 12</h5>
+              <p class="card-text"> ideal para jogos,câmeras de alta qualidade.</p>
+              <p class="preço">R$ 1.490,99</p>
+              <a href="#" class="btn btn-primary">+ Carrinho</a>
+            </div>
+          </div>
+        </div>
+
       </div>
-  </div>
-  </section>
 
-  <h2>POR CATEGORIA</h2>
-
-  <section id="cateroria" class="container-fluid">
-        
-
-
-      </div>
-    </div>
-
-</section>
-
-
+    </section>
 
   </main>
 
@@ -133,13 +195,11 @@
     <p>Desenvolvido por Viviane Angélica</p>
   </footer>
 
-  <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
-
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
