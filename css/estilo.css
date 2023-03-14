@@ -9,74 +9,105 @@ nav {
 
 
 /*banner*/
-#section-banners img {
+#section-banners img{
     height: 800px;
     width: 400px;
 }
 
 /*Produtos vendidos*/
 
-#section-vendidos img {
+#vendidos img{
+
     overflow: hidden;
     height: 250px;
 }
 
-#section-vendidos {
+#vendidos {
     text-align: center;
-}
-#section-vendidos h2 {
+    margin: auto;
+}  
+#vendidos h2 {
     font-weight: bold;
     padding: 20px;
-}
+    text-align: center;
+    padding-top: 80px;
+}   
 
-#section-vendidos a {
+#section-vendidos a{
     font-size: 11px;
     text-transform: uppercase;
 }
 
-#section-vendidos .card {
+.card{ 
     /* margin: 5px; */
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-bottom: 10px;
-    /* width: 10px; */
-}  
-#section-vendidos .preço {
+    padding-top: 300px;
+    
+
+}   
+.preço{
     color: red;
     font-size: 18px;
     font-weight: bold;
 }
-/*categorias*/
+.row{
 
-#section-categoria {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/*categorias*/
+#categorias {
 
+    padding-top: 100px;
+}
+#categorias h2{
 
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 80px;
+}
 
+.row {
 
+display: flex;
+justify-content: center;
+align-items: center;
 
+}
+.card {
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+}
+.img {
+    float: right;
+    max-width: 64px;
+    max-height: 64px;
+}
+.valor {
 
-
-
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
 
 
 /*Rodapé*/
 footer {
     text-align: center;
+    display: block;
 }
 footer p{
     font-weight: bold;
     padding: 10px;
 }
 
-/*Botão Voltar topo*/
-#voltar-topo {
-    position: fixed;
-    bottom: 5px;
-    right: 50px;
-}
 /* página de login  */
 #section-login {
     margin-top: 100px;

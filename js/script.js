@@ -14,12 +14,12 @@ function Topo(){
 
 //Validação de Login
 
-function Login(){
-    var logado = o;
+function login(){
+    var logado = 0;
     var usuario = document.getElementById("usuario").value;
     var senhs = document.getElementById("senha").value;
 
-    if(usuario== 'adm' && senha == '123456'){
+    if(usuario== 'adm' && senhs == '123456'){
         window.location="index.html"
         logado = 1;
     }
